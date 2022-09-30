@@ -1,5 +1,6 @@
-package com.azizbek.channelpostingbotheroku;
+package com.azizbek.channelpostingbotheroku.controller;
 
+import com.azizbek.channelpostingbotheroku.botapi.Bot;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
