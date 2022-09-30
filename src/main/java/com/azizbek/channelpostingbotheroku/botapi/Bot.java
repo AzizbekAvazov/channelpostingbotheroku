@@ -41,10 +41,7 @@ public class Bot extends TelegramWebhookBot {
 
     @Override
     public BotApiMethod<?> onWebhookUpdateReceived(Update update) {
-        SendMessage replyMessage = new SendMessage();
-        replyMessage.setChatId(update.getMessage().getFrom().getId().toString());
-        replyMessage.setText("YOU ARE THE BEST OF BESTS!!!");
-        return replyMessage;
+        return updateHandler.processUpdate(update);
     }
 
     @Override
