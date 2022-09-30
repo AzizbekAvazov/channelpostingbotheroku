@@ -30,7 +30,7 @@ public class Bot extends TelegramWebhookBot {
     public BotApiMethod<?> onWebhookUpdateReceived(Update update) {
         SendMessage replyMessage = new SendMessage();
         replyMessage.setChatId(update.getMessage().getFrom().getId().toString());
-        replyMessage.setText("TESTSETTSETSE!!!");
+        replyMessage.setText("HELLO AZIZBEK YOU ARE THE BEST!!!");
         return replyMessage;
     }
 
